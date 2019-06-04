@@ -16,33 +16,34 @@ repositories {
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
 	compile('org.springframework.boot:spring-boot-starter-actuator')
-	compile('org.springframework.boot:spring-boot-starter-security')
-	compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-sleuth', version: '1.0.0.RELEASE'
-	compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-hystrix', version: '1.4.7.RELEASE'
+//	compile('org.springframework.boot:spring-boot-starter-security')
+//	compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-sleuth', version: '1.0.0.RELEASE'
+//	compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-hystrix', version: '1.4.7.RELEASE'
 
-	compile('org.springframework.boot:spring-boot-starter-batch')
+//	compile('org.springframework.boot:spring-boot-starter-batch')
 
-	compile('org.springframework.boot:spring-boot-starter-data-mongodb')
+//	compile('org.springframework.boot:spring-boot-starter-data-mongodb')
 
-	compile('com.fasterxml.jackson.core:jackson-annotations')
-	compile('com.fasterxml.jackson.core:jackson-core')
-	compile('com.fasterxml.jackson.core:jackson-databind')
-	compile('com.fasterxml.jackson.datatype:jackson-datatype-jdk8')
-	compile('com.fasterxml.jackson.datatype:jackson-datatype-joda')
-	compile('com.fasterxml.jackson.datatype:jackson-datatype-jsr310')
+//	compile('com.fasterxml.jackson.core:jackson-annotations')
+//	compile('com.fasterxml.jackson.core:jackson-core')
+//	compile('com.fasterxml.jackson.core:jackson-databind')
+//	compile('com.fasterxml.jackson.datatype:jackson-datatype-jdk8')
+//	compile('com.fasterxml.jackson.datatype:jackson-datatype-joda')
+//	compile('com.fasterxml.jackson.datatype:jackson-datatype-jsr310')
 
 	//kafka
 	compile('org.apache.kafka:kafka-clients:0.11.0.0')
 	compile group: 'org.springframework.cloud', name: 'spring-cloud-stream-binder-kafka', version: '1.0.0.RELEASE'
 	testCompile group: 'org.springframework.cloud', name: 'spring-cloud-stream-schema', version: '2.2.0.RELEASE'
-	compile('org.apache.avro:avro:1.8.2')
+//	compile('org.apache.avro:avro:1.8.2')
 
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	testCompile group: 'org.springframework.cloud', name: 'spring-cloud-stream-test-support', version: '2.2.0.RELEASE'
 
-	testCompile group: 'io.springfox', name: 'springfox-staticdocs', version: '2.0.1'
+	testCompile group: 'org.apache.kafka', name: 'kafka-streams-test-utils', version: '2.2.1'
+//	testCompile group: 'io.springfox', name: 'springfox-staticdocs', version: '2.0.1'
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	testCompile('org.assertj:assertj-core')
 	testCompile('org.springframework.batch:spring-batch-test')
-	testCompile('de.flapdoodle.embed:de.flapdoodle.embed.mongo')
+//	testCompile('de.flapdoodle.embed:de.flapdoodle.embed.mongo')
 }

@@ -5,7 +5,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 
 @SpringBootApplication
-@EnableBinding(Topics.class)
 public class DemoApplication {
 
 	public static void main(String[] args) {
