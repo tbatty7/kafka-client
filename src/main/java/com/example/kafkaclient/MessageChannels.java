@@ -5,10 +5,10 @@ import org.springframework.messaging.MessageChannel;
 
 public interface MessageChannels {
 
-    String MESSAGE_CHANNEL_FOR_TOPIC = "inputMessageForTopic";
+    String MESSAGE_CHANNEL_FOR_TOPIC = "inputMessage";
 
-    @Input(MessageChannels.MESSAGE_CHANNEL_FOR_TOPIC)
-    MessageChannel output();
+    @Input()
+    MessageChannel inputMessage();
 
     // Url to helpful link explaining how this class works
     // https://docs.spring.io/spring-cloud-stream/docs/Elmhurst.RELEASE/reference/htmlsingle/#spring-cloud-stream-preface-adding-message-handler
