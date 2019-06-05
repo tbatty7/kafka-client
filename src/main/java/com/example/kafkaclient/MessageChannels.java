@@ -2,13 +2,12 @@ package com.example.kafkaclient;
 
 import org.springframework.cloud.stream.annotation.Input;
 import org.springframework.messaging.MessageChannel;
-import org.springframework.messaging.SubscribableChannel;
 
-public interface Topics {
+public interface MessageChannels {
 
-    String OUTPUT = "sampleOutput";
+    String MESSAGE_CHANNEL_FOR_TOPIC = "inputMessageForTopic";
 
-    @Input(Topics.OUTPUT)
+    @Input(MessageChannels.MESSAGE_CHANNEL_FOR_TOPIC)
     MessageChannel output();
 
     // Url to helpful link explaining how this class works
